@@ -3,6 +3,71 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/home.css">
+        <title>Spotify API</title>
+        <style>
+            body {
+                    font-family: Arial, sans-serif;
+                    background-color: #121212;
+                    color: white;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                h1, h2 {
+                    color: #1DB954;
+                }
+
+                a {
+                    color: #1DB954;
+                    text-decoration: none;
+                    font-weight: bold;
+                    display: inline-block;
+                    padding: 10px 20px;
+                    border: 2px solid #1DB954;
+                    border-radius: 20px;
+                    transition: background 0.3s;
+                }
+
+                a:hover {
+                    background: #1DB954;
+                    color: black;
+                }
+
+                img {
+                    border-radius: 10px;
+                    margin: 10px;
+                }
+
+                table {
+                    width: 80%;
+                    margin: 20px auto;
+                    border-collapse: collapse;
+                    background: #1e1e1e;
+                    border-radius: 10px;
+                    overflow: hidden;
+                }
+
+                table th, table td {
+                    border: 1px solid #333;
+                    padding: 15px;
+                }
+
+                table th {
+                    background: #1DB954;
+                    color: black;
+                }
+
+                table tr:nth-child(even) {
+                    background: #242424;
+                }
+
+                table tr:hover {
+                    background: #333;
+                }
+
+        </style>
     </head>
     <body>
     <h1>Benvenuto, {{ user_info['display_name'] }}!</h1>
@@ -16,9 +81,9 @@
         <table>
             <thead>
                 <tr>
-                    <th>|Nome Playlist|</th>
-                    <th>|Numero di Brani|</th>
-                    <th>|Copertina|</th>
+                    <th>Nome Playlist</th>
+                    <th>Numero di Brani</th>
+                    <th>Copertina</th>
                 </tr>
             </thead>
             <tbody>

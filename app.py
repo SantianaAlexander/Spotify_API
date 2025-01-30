@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 SPOTIFY_CLIENT_ID = "af4cae999c184ad7b760fb8c51b60d60"
 SPOTIFY_CLIENT_SECRET = "9d1c008a6aaa4a969b178224406d5a73"
-SPOTIFY_REDIRECT_URI = "https://5000-santianaalex-spotifyapi-76oqy36jqks.ws-eu117.gitpod.io/callback"
+SPOTIFY_REDIRECT_URI = "https://5001-santianaalex-spotifyapi-76oqy36jqks.ws-eu117.gitpod.io/callback"
 
 app = Flask(__name__)
 app.secret_key = 'chiave_per_session' 
@@ -49,4 +49,4 @@ def callback():
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
